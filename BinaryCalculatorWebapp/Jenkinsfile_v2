@@ -48,6 +48,8 @@ pipeline {
                     dir('BinaryCalculatorWebapp'){
                         // set the credential for gcloud within the container
                         sh 'gcloud auth activate-service-account --key-file $SERVICE_ACCOUNT'
+                        // Debugging Project ID
+                        sh 'echo "Project ID is: $PROJECT"'
                         sh 'gcloud config set project $PROJECT'
                         sh 'gcloud builds submit -t $IMAGE_TAG --suppress-logs'
                     }
@@ -68,12 +70,11 @@ pipeline {
                                 sh 'kubectl delete deployment binarycalculator-deployment'
                             }
                             catch (Exception e){
-                                
+                                 
                             }
                         }
                         // create a new deployment
                         sh 'kubectl create deployment binarycalculator-deployment --image $IMAGE_TAG --port=8080'
-
                     }
                 }
             }
@@ -92,7 +93,7 @@ pipeline {
                                 sh 'kubectl expose deployment binarycalculator-deployment --type=LoadBalancer --name=binarycalculator-service'
                             }
                             catch (Exception e){
-                                
+                                 
                             }
                         }
                         // display the service IP

@@ -27,6 +27,10 @@ agent:
       cpu: "1"
       memory: "512Mi"
 persistence:
+  enabled: true
   size: 100Gi
+  storageClass: standard-rwo
+  existingClaim: cd-jenkins
+
 serviceAccount:
   name: cd-jenkins

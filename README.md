@@ -275,3 +275,21 @@ What do pipeline, node, agent, stage, and steps mean in the context of Jenkins?
 * Your Github link and video links in the report.
 * An audible video of about 3 minutes showing the continuous integration part (the two techniques).
 * An audible video of about 3 minutes showing the design part.
+
+
+
+
+# Testing Demo Build
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  41.862 s
+[INFO] Finished at: 2025-03-02T17:08:10Z
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving /var/jenkins_home/workspace/binaryCalculate_mvn/BinaryCalculatorWebapp/pom.xml to com.ontariotechu.sofe3980U/BinaryCalculatorWebapp/1.0.0/BinaryCalculatorWebapp-1.0.0.pom
+[JENKINS] Archiving /var/jenkins_home/workspace/binaryCalculate_mvn/BinaryCalculatorWebapp/target/BinaryCalculatorWebapp.war to com.ontariotechu.sofe3980U/BinaryCalculatorWebapp/1.0.0/BinaryCalculatorWebapp-1.0.0.war
+channel stopped
+[Set GitHub commit status (universal)] SUCCESS on repos [GHRepository@29efb400[archived=false,commits={},compareUsePaginatedCommits=false,description=<null>,disabled=false,fork=true,homepage=<null>,isTemplate=false,language=<null>,license=<null>,milestones={},name=Ronald-Onyiorah-SOFE3980U-Lab3-Part2,nodeId=R_kgDOOBuenw,size=2014,visibility=public,createdAt=2025-03-02T03:21:46Z,id=941334175,nodeId=<null>,updatedAt=2025-03-02T03:21:46Z,url=https://api.github.com/repos/Ronaldvan/Ronald-Onyiorah-SOFE3980U-Lab3-Part2]] (sha:580e079) with context:binaryCalculate_mvn
+Setting commit status on GitHub for https://github.com/Ronaldvan/Ronald-Onyiorah-SOFE3980U-Lab3-Part2/commit/580e079e567cbe26deec62ab8f00a2ae0745bdc2
+Finished: SUCCESS
